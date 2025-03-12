@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <h1>Carrito de compras - Daniela Romero Nava</h1>
+    <header>
+        <input type="text" id="search" placeholder="Buscar producto...">
+    </header>
+
+    <div class="cart-icon" onclick="toggleCart()">
+        <img src="img/carrito.png" alt="Carrito">
+    </div>
+
+    <div class="cart-dropdown" id="cartDropdown">
+        <h3>Carrito</h3>
+        <div id="cartItems"></div>
+        <button id="clearCartButton" onclick="clearCart()">Vaciar Carrito</button>
+    </div>
+
+    <div class="products">
+        <div class="product" data-name="Auriculares Inalámbricos" data-price="50">
+            <img src="img/1.jpg" alt="Auriculares Inalámbricos">
+            <h3>Auriculares Inalámbricos</h3>
+            <p>$50</p>
+            <button onclick="addToCart('Auriculares Inalámbricos', 50)">Agregar al carrito</button>
+        </div>
+        <div class="product" data-name="Smartwatch con Monitor de Ritmo Cardíaco" data-price="120">
+            <img src="img/2.jpg" alt="Smartwatch con Monitor de Ritmo Cardíaco">
+            <h3>Smartwatch con Monitor de Ritmo Cardíaco</h3>
+            <p>$120</p>
+            <button onclick="addToCart('Smartwatch con Monitor de Ritmo Cardíaco', 120)">Agregar al carrito</button>
+        </div>
+        <div class="product" data-name="Mochila Impermeable para Laptop" data-price="45">
+            <img src="img/3.jpg" alt="Mochila Impermeable para Laptop">
+            <h3>Mochila Impermeable para Laptop</h3>
+            <p>$45</p>
+            <button onclick="addToCart('Mochila Impermeable para Laptop', 45)">Agregar al carrito</button>
+        </div>
+        <div class="product" data-name="Cafetera de Goteo Programable" data-price="35">
+            <img src="img/4.webp" alt="Cafetera de Goteo Programable">
+            <h3>Cafetera de Goteo Programable</h3>
+            <p>$35</p>
+            <button onclick="addToCart('Cafetera de Goteo Programable', 35)">Agregar al carrito</button>
+        </div>
+        <div class="product" data-name="Altavoz Bluetooth Portátil" data-price="60">
+            <img src="img/5.jpeg" alt="Altavoz Bluetooth Portátil">
+            <h3>Altavoz Bluetooth Portátil</h3>
+            <p>$60</p>
+            <button onclick="addToCart('Altavoz Bluetooth Portátil', 60)">Agregar al carrito</button>
+        </div>
+        <div class="product" data-name="Set de Sartenes Antiadherentes" data-price="80">
+            <img src="img/6.jpg" alt="Set de Sartenes Antiadherentes">
+            <h3>Set de Sartenes Antiadherentes</h3>
+            <p>$80</p>
+            <button onclick="addToCart('Set de Sartenes Antiadherentes', 80)">Agregar al carrito</button>
+        </div>
+        <div class="product" data-name="Lámpara de Escritorio LED" data-price="25">
+            <img src="img/7.webp" alt="Lámpara de Escritorio LED">
+            <h3>Lámpara de Escritorio LED</h3>
+            <p>$25</p>
+            <button onclick="addToCart('Lámpara de Escritorio LED', 25)">Agregar al carrito</button>
+        </div>
+        <div class="product" data-name="Cámara de Seguridad para el Hogar" data-price="90">
+            <img src="img/8.webp" alt="Cámara de Seguridad para el Hogar">
+            <h3>Cámara de Seguridad para el Hogar</h3>
+            <p>$90</p>
+            <button onclick="addToCart('Cámara de Seguridad para el Hogar', 90)">Agregar al carrito</button>
+        </div>
+        <div class="product" data-name="Juego de Maletas de Viaje" data-price="150">
+            <img src="img/9.avif" alt="Juego de Maletas de Viaje">
+            <h3>Juego de Maletas de Viaje</h3>
+            <p>$150</p>
+            <button onclick="addToCart('Juego de Maletas de Viaje', 150)">Agregar al carrito</button>
+        </div>
+        <div class="product" data-name="Bicicleta Plegable" data-price="200">
+            <img src="img/10.jpg" alt="Bicicleta Plegable">
+            <h3>Bicicleta Plegable</h3>
+            <p>$200</p>
+            <button onclick="addToCart('Bicicleta Plegable', 200)">Agregar al carrito</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
